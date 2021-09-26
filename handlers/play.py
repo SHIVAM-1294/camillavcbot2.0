@@ -93,7 +93,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🔄 **Processing....**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -149,11 +149,17 @@ async def play(_, message: Message):
         duration = round(audio.duration / 60)
         views = "Locally added"
 
-        keyboard = InlineKeyboardMarkup(
+                keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ßƐSŦĪƐS ZᎾИƐ",
+                        text="BESTIES ZONE",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="UPDATES",
                         url="https://t.me/BONDOFBESTIZZ")
                    
                 ]
@@ -187,11 +193,17 @@ async def play(_, message: Message):
                 dur += (int(dur_arr[i]) * secmul)
                 secmul *= 60
                 
-            keyboard = InlineKeyboardMarkup(
+                    keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ßƐSŦĪƐS ZᎾИƐ",
+                        text="BESTIES ZONE",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="UPDATES",
                         url="https://t.me/BONDOFBESTIZZ")
                    
                 ]
@@ -202,11 +214,17 @@ async def play(_, message: Message):
             thumb_name = "https://telegra.ph/file/5791ec0de6fc2f6428b83.jpg"
             duration = "NaN"
             views = "NaN"
-            keyboard = InlineKeyboardMarkup(
+                    keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ßƐSŦĪƐS ZᎾИƐ",
+                        text="BESTIES ZONE",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="UPDATES",
                         url="https://t.me/BONDOFBESTIZZ")
                    
                 ]
@@ -256,7 +274,13 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="ßƐSŦĪƐS ZᎾИƐ",
+                        text="BESTIES ZONE",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="UPDATES",
                         url="https://t.me/BONDOFBESTIZZ")
                    
                 ]
