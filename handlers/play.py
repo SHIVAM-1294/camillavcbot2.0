@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/warbotz")
+                        url="https://t.me/ELECTROBOT_SUPPORT")
                    
                 ]
             ]
@@ -190,11 +190,11 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
-                            url=f"{url}"),
+                            text="❤️ SUPPORT ❤️",
+                            url="https://t.me/ELECTROBOT_SUPPORT"),
                         InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
+                            text="❤️ UPDATES ❤️",
+                            url=f"https://t.me/ELECTRO_UPDATES")
 
                     ]
                 ]
@@ -205,14 +205,17 @@ async def play(_, message: Message):
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
+                [
                     [
-                        [
-                            InlineKeyboardButton(
-                                text="YouTube 🎬",
-                                url=f"https://youtube.com")
+                        InlineKeyboardButton(
+                            text="❤️ SUPPORT ❤️",
+                            url="https://t.me/ELECTROBOT_SUPPORT"),
+                        InlineKeyboardButton(
+                            text="❤️ UPDATES ❤️",
+                            url=f"https://t.me/ELECTRO_UPDATES")
 
-                        ]
                     ]
+                ]
                 )
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
@@ -254,15 +257,15 @@ async def play(_, message: Message):
             print(str(e))
             return
 
-        keyboard = InlineKeyboardMarkup(
+            keyboard = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
-                            url=f"{url}"),
+                            text="❤️ SUPPORT ❤️",
+                            url="https://t.me/ELECTROBOT_SUPPORT"),
                         InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
+                            text="❤️ UPDATES ❤️",
+                            url=f"https://t.me/ELECTRO_UPDATES")
 
                     ]
                 ]
