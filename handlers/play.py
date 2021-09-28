@@ -187,36 +187,30 @@ async def play(_, message: Message):
                 secmul *= 60
                 
             keyboard = InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="❤️ SUPPORT ❤️",
-                            url="https://t.me/ELECTROBOT_SUPPORT"),
-                        InlineKeyboardButton(
-                            text="❤️ UPDATES ❤️",
-                            url=f"https://t.me/ELECTRO_UPDATES")
-
-                    ]
+                    InlineKeyboardButton(
+                        text="Channel 🔊",
+                        url="https://t.me/ELECTROBOT_SUPPORT")
+                   
                 ]
-            )
+            ]
+        )
         except Exception as e:
             title = "NaN"
             thumb_name = "https://telegra.ph/file/5b2ed5398e7cc024c8838.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="❤️ SUPPORT ❤️",
-                            url="https://t.me/ELECTROBOT_SUPPORT"),
-                        InlineKeyboardButton(
-                            text="❤️ UPDATES ❤️",
-                            url=f"https://t.me/ELECTRO_UPDATES")
-
-                    ]
+                    InlineKeyboardButton(
+                        text="Channel 🔊",
+                        url="https://t.me/ELECTROBOT_SUPPORT")
+                   
                 ]
-                )
+            ]
+        )
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
              return
@@ -258,18 +252,15 @@ async def play(_, message: Message):
             return
 
             keyboard = InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="❤️ SUPPORT ❤️",
-                            url="https://t.me/ELECTROBOT_SUPPORT"),
-                        InlineKeyboardButton(
-                            text="❤️ UPDATES ❤️",
-                            url=f"https://t.me/ELECTRO_UPDATES")
-
-                    ]
+                    InlineKeyboardButton(
+                        text="Channel 🔊",
+                        url="https://t.me/ELECTROBOT_SUPPORT")
+                   
                 ]
-            )
+            ]
+        )
         
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
